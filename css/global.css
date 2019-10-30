@@ -1,18 +1,52 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
 body {
-    background-color: rgb(231, 231, 231);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+    background-color: #dfe6e9;
     margin: 0;
+    margin-top:60px;
+    
 }
 .navigatsioon{
-    font-size: 2vw;
-    background-color: rgb(182, 182, 182);
-    padding: 5px;
-    margin: 0;
-    box-shadow: 0px 2px 2px grey;
+    font-size: 20px;
+    background-color: #2d3436;
+    padding: 3px;
+    margin: 0px;
+    box-shadow: 0px 2px 2px #2d3436;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align:center;    
 }
+.navigatsioon .navinupp:first-child{
+    border-bottom-left-radius: 5px;
+}
+
+.navigatsioon .navinupp:last-child{
+    border-bottom-right-radius: 5px;
+}
+
 .navinupp {
-    background-color: orange;
-    padding: 6px 10px
+    
+    background-color: #636e72;
+    padding: 6px 20px;
+    margin: -3px;
+    transition:.3s;
+    display: inline-block;
+    
 }
+.navinupp:link{
+    color: #dfe6e9;
+    text-decoration: none;
+}
+.navinupp:visited {
+    color: #dfe6e9;
+    text-decoration: none;
+  }
 .navinupp:hover{
-    background-color: aqua;
+    background-color: #74b9ff;
+    color: #2d3436;
 }
