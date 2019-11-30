@@ -15,15 +15,16 @@
 
 img {
     border-radius: 10%;
-    margin-left: 10px;
+
 
 }
 .container{
-    width: 1500px;
+    width: 90%;
 }
 .floated{
     float: right;
-    width: 10px;
+    width: 15%;
+    margin-right: 7%;
 }
 .videoWrapper {
 	position: absolute;
