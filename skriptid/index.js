@@ -27,7 +27,7 @@ function kontrolliKüpsist(){
                     i++
                 }, 500)
             },1000)        
-        }, 4000)}      
+        }, 3000)}      
 }
 
 window.addEventListener('load', function () {
