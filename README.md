@@ -15,7 +15,7 @@ Veebilehe eesmärk on tutvustada eestlastest e-sportlaseid ning nende saavutusi.
 - Veebilehe tegemiseks motivatsiooni leidmine
 
 ## Mida õppisite?
-- Enri:
+- Enri: Õppisin piltide ning teksti paigutamist, sain teada kuidas võiks JavaScripti kasutada.
 - Marten: 
 - Helar: Õppisin kasutama CSS transitioneid läbi JavaScripti, piltide paigutamist ning nende suuruste ühtlustamist nii, et ei pilti ei venitataks. 
 
