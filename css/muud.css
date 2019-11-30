@@ -7,9 +7,8 @@ body {
 }
 
 .tekst {
-  font-size: 35px;
+  font-size: 2vw;
   color: white;
-  font-family:'Times New Roman', Times, serif;
   text-shadow:
   -2px -2px 0 #000,
   2px -2px 0 #000,
