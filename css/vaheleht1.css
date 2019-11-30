@@ -26,20 +26,6 @@ img {
     width: 15%;
     margin-right: 7%;
 }
-.videoWrapper {
-	position: absolute;
-    padding-top: 250px;
-    padding-bottom: 1000px;
-    height: 0;
-    margin-left: 5%;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	width: 550px;
-    height: 340px;
-    
-}
 .banner {
     margin-top: -60px;
 }
