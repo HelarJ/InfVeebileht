@@ -1,18 +1,32 @@
-a = document.getElementById("testID2");
-a.style.color = "red";
-a.innerText = "💣";
-i = 0;
-intervall = setInterval(()=> {
-    i = i+0.1
-    if (i>=20.0){
-        a.innerText = ""
-        a.type = "img"
-        pilt = document.createElement("img")
-        pilt.src = "/images/meme.jpg"
-        a.append(pilt)
-        clearInterval(intervall)
-    }
-    a.style.fontSize = (String(i) + "vw");
-    console.log(String(i) + "vw")
-}, 50);
+a = document.getElementById("popup"); //võtab popup id-ga elemendi ning paneb selle muutujasse a 
+if (document.cookie != "nõustunud") {a.style.display = "block"} //küsib ainult siis, kui tingimustele pole nõustutud.
 
+sulge = document.getElementById("sulge")
+sulge.onclick = function () { //lisab sulge nupule onclick funktsiooni
+    a.style.display = "none"
+    document.cookie = "nõustunud" //kirjutab cookie milles on nõustumine kirjas, by default kustutatakse cookie kui browser sulgeda.
+    kontrolliKüpsist()
+}
+
+function kontrolliKüpsist(){
+    if (document.cookie == "nõustunud"){ 
+        tekst1 = document.getElementById("tekst1")
+        tekst2 = document.getElementById("tekst2")
+        tekst1.classList.add("näita")
+        setTimeout(function(){
+            tekst2.classList.add("näita")
+            pilt = document.getElementsByTagName("img")
+            let i = 0
+            setTimeout(function(){
+                intervall = setInterval(() => {
+                    if (i==3){clearInterval(intervall)}
+                    pilt[i].classList.add("näita")
+                    i++
+                }, 500)
+            },1000)        
+        }, 4000)}      
+}
+
+window.addEventListener('load', function () {
+    kontrolliKüpsist()
+});
