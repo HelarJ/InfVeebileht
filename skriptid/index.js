@@ -22,12 +22,12 @@ function kontrolliKüpsist(){
             let i = 0
             setTimeout(function(){
                 intervall = setInterval(() => {
-                    if (i==3){clearInterval(intervall)}
+                    if (i==4){clearInterval(intervall)}
                     pilt[i].classList.add("näita")
                     i++
                 }, 500)
             },1000)        
-        }, 3000)}      
+        }, 2000)}      
 }
 
 window.addEventListener('load', function () {
