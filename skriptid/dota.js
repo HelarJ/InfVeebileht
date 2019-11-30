@@ -1,6 +1,7 @@
 pilt = document.getElementById("puppeyPilt")
 pilt.onclick = function muudaPilt(){
-    vanapilt = pilt.getAttribute("src")
+    vanapilt = pilt.src
+    //console.log(vanapilt)
     if (vanapilt.slice(-6) == "ey.jpg"){
         pilt.setAttribute("src", "images/puppey2018.jpg")
     } else {
