@@ -1,0 +1,81 @@
+
+
+body {
+  background-image: url("https://www.washingtonpost.com/resizer/WrkYHy213gWxZ11oJQxCdO6YxCs=/arc-anglerfish-washpost-prod-washpost/public/4MK7FUENKBCC3CV5ISKCIK5OQM.jpg");
+  background-size: 100%;
+  
+}
+
+.tekst {
+  font-size: 35px;
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  text-shadow:
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+      2px 2px 0 #000;
+  margin-left: 90px;
+  font-weight:bold;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header {
+  font-size: 45px;
+  margin-left:400px;
+  color: white;
+  text-shadow:
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+      2px 2px 0 #000;
+      font-family:monospace;
+}
+
+img {
+  border-radius:8px;
+  border: 5px solid;
+  margin-left: 80px;
+  border-color: white;
+}
+
+
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.left {
+  left: 0;
+  margin-top: 30px;
+  
+}
+
+
+.right {
+  right: 0;
+  margin-top: 30px;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
