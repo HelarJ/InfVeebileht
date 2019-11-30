@@ -6,7 +6,8 @@ if (küpsis != "nõustunud") {a.style.display = "block"} //küsib ainult siis, k
 sulge = document.getElementById("sulge")
 sulge.onclick = function () { //lisab sulge nupule onclick funktsiooni
     a.style.display = "none"
-    document.cookie = "nõustunud" //kirjutab cookie milles on nõustumine kirjas, by default kustutatakse cookie kui browser sulgeda.
+    document.cookie = "nõustunud"
+    küpsis = "nõustunud" //kirjutab cookie milles on nõustumine kirjas, by default kustutatakse cookie kui browser sulgeda.
     kontrolliKüpsist()
 }
 
