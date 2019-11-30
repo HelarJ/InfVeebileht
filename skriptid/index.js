@@ -1,5 +1,7 @@
-a = document.getElementById("popup"); //võtab popup id-ga elemendi ning paneb selle muutujasse a 
-if (document.cookie != "nõustunud") {a.style.display = "block"} //küsib ainult siis, kui tingimustele pole nõustutud.
+a = document.getElementById("popup"); //võtab popup id-ga elemendi ning paneb selle muutujasse a
+küpsis = document.cookie.split(';')
+küpsis = küpsis[0] 
+if (küpsis != "nõustunud") {a.style.display = "block"} //küsib ainult siis, kui tingimustele pole nõustutud.
 
 sulge = document.getElementById("sulge")
 sulge.onclick = function () { //lisab sulge nupule onclick funktsiooni
@@ -9,7 +11,7 @@ sulge.onclick = function () { //lisab sulge nupule onclick funktsiooni
 }
 
 function kontrolliKüpsist(){
-    if (document.cookie == "nõustunud"){ 
+    if (küpsis == "nõustunud"){ 
         tekst1 = document.getElementById("tekst1")
         tekst2 = document.getElementById("tekst2")
         tekst1.classList.add("näita")
