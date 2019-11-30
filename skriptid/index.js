@@ -1,14 +1,18 @@
 a = document.getElementById("popup"); //võtab popup id-ga elemendi ning paneb selle muutujasse a
 küpsis = document.cookie.split(';')
 küpsis = küpsis[0] 
+//document.getElementById("tingimused").style.display = "none"
 if (küpsis != "nõustunud") {a.style.display = "block"} //küsib ainult siis, kui tingimustele pole nõustutud.
 
 sulge = document.getElementById("sulge")
 sulge.onclick = function () { //lisab sulge nupule onclick funktsiooni
-    a.style.display = "none"
-    document.cookie = "nõustunud"
-    küpsis = "nõustunud" //kirjutab cookie milles on nõustumine kirjas, by default kustutatakse cookie kui browser sulgeda.
-    kontrolliKüpsist()
+    if (vajutatud){
+        a.style.display = "none"
+        document.cookie = "nõustunud"
+        küpsis = "nõustunud" //kirjutab cookie milles on nõustumine kirjas, by default kustutatakse cookie kui browser sulgeda.
+    kontrolliKüpsist()} else {
+        document.getElementById("eivajutanud").removeAttribute("hidden")
+    }
 }
 
 function kontrolliKüpsist(){
@@ -33,3 +37,10 @@ function kontrolliKüpsist(){
 window.addEventListener('load', function () {
     kontrolliKüpsist()
 });
+let vajutatud = false
+tingimustelink = document.getElementById("tingimustelink")
+tingimustelink.onclick = function () {
+    vajutatud = true
+    document.getElementById("tingimused").removeAttribute("hidden")
+
+}

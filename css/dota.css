@@ -7,21 +7,11 @@
     margin: 3vw;
 }
 
-img {
-    border-radius: 10%;
-    box-shadow: 0px 0px 5px;
-    width: 20vw;
-}
-.container{
-    width: 90%;
-}
-
 
 p {
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+
     text-align: center;
     width: 100%;
-    padding-left: 3vw;
+    padding-left: 5vw;
     font-size: 1vw;
 }
