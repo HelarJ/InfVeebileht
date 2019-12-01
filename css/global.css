@@ -2,7 +2,6 @@
     display: none; 
 }
 body {
-    scrollbar-width: none;
     -ms-overflow-style: none;
     background-color: rgb(240,240,240);
     margin: 0;
