@@ -28,20 +28,22 @@
 
 .galerii{
     padding-top: 10vh;
-    display: flex;
-    flex-wrap: wrap;
+    display: flexbox;
+    text-align: center;
     
 }
 .galerii a{
     text-align: center;
-    width: 50vw;
+    width: 40vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    color: #dfe6e9
     
 }
 .galerii img{
-    max-width:100%;
-    box-shadow: 10px 10px 10px black;
+    width:40vw;
+    box-shadow: 0px 0px 10px black;
+    margin: 1.5vw;
 }
 img{
     opacity: 0;

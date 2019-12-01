@@ -3,7 +3,7 @@
 }
 body {
     -ms-overflow-style: none;
-    background-color: rgb(240,240,240);
+    background-color: #dfe6e9;
     margin: 0;
     margin-top:60px;
     font-family: 'Courier New', Courier, monospace
@@ -44,6 +44,9 @@ body {
 @media only screen and (max-width: 600px){
     .navinupp {
         padding:3px 15px;
+    }
+    .navigatsioon{
+        height:30px
     }
 }
 .navinupp:link{

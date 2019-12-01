@@ -2,7 +2,7 @@ pilt = document.getElementById("puppeyPilt")
 allkiri = document.getElementById("ajamasin")
 pilt.onclick = function muudaPilt(){
     vanapilt = pilt.src
-    console.log(vanapilt)
+    //console.log(vanapilt)
     if (vanapilt.search("puppey.jpg") != -1){
         pilt.setAttribute("src", "images/puppey2018.jpg")
         allkiri.innerHTML = "2018 aasta Puppey.";
