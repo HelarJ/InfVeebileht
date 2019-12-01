@@ -2,6 +2,7 @@
     display: none; 
 }
 body {
+    scrollbar-width: none;
     -ms-overflow-style: none;
     background-color: rgb(240,240,240);
     margin: 0;
@@ -18,7 +19,6 @@ body {
     width: 100%;
     text-align:center; 
     height: 33px;
-    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
